@@ -9,7 +9,13 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera to share your video.",
+        "NSMicrophoneUsageDescription": "This app uses the microphone to share your audio.",
+        "NSBluetoothPeripheralUsageDescription": "Required for Bluetooth audio devices",
+        "NSPhotoLibraryUsageDescription": "Required to use screen share feature"
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -18,7 +24,8 @@
       },
       "edgeToEdgeEnabled": true,
 
-      "package": "com.rahulclipl.googlesignin"
+      "package": "com.rahulclipl.googlesignin",
+      "permissions": ["CAMERA", "RECORD_AUDIO"]
     },
     "web": {
       "bundler": "metro",
